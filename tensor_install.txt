@@ -1,0 +1,10 @@
+# 24.02.24
+
+# Enviroment
+conda create -n tensor python=3.10
+conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
+python -m pip install "tensorflow<2.11"
+
+# Test gpu
+import tensorflow as tf
+tf.config.list_physical_devices()
